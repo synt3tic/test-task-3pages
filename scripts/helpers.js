@@ -50,7 +50,6 @@ const animateScroll = (anchors) => {
     });
   }
 };
-
 const upScroll = () => {
   window.scrollTo({
     top: 0,
@@ -58,4 +57,10 @@ const upScroll = () => {
   });
 };
 
-export { convertDayInfo, addClass, removeClass, animateScroll, upScroll };
+export default {
+  convertDayInfo,
+  addClass,
+  removeClass,
+  animateScroll,
+  upScroll,
+};

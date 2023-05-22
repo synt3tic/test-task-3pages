@@ -15,6 +15,7 @@ const navBarButton = document.querySelector(".nav-bar");
 const navBarMenu = document.querySelector(".nav-bar__menu");
 const footer = document.querySelector(".footer");
 const footerButton = document.querySelector(".button_footer");
+
 export default {
   body,
   tvs,
