@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="icon" type="image/svg+xml" href="/src//assets/icons/browser-icon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="/src/styles/index.css" />
+  <link rel="stylesheet" type="text/css" href="/src/styles/normalize.css" />
+  <title>SomeStore</title>
+</head>
+<body>
+  <header class="header">
+    <nav class="nav-bar">
+      <img src="/src/assets/icons/menu.svg" alt="menu-icon">
+    </nav>
+    <a href="#tvs">
+      <img class="header__logo" src="/src/assets//icons//logo.svg" alt="logo" />
+    </a>
+    <nav class="header__navigation">
+      <ul class="navigation">
+        <li class="navigation__item">
+          <a href="#tvs">Телевизоры</a>
+        </li>
+        <li class="navigation__item">
+          <a href="#phones">Телефоны</a>
+        </li>
+        <li class="navigation__item">
+          <a href="#laptops">Ноутбуки</a>
+        </li>
+      </ul>
+    </nav>
+    <img 
+      class="header__color-mode-switch" 
+      src="/src/assets/icons/color-mode-switch.svg" 
+      alt="color-mode-switch"
+    />
+  </header>
+  <ul class="nav-bar__menu nav-bar__menu_hidden">
+    <li class="navigation__item">
+      <a href="#tvs">Телевизоры</a>
+    </li>
+    <li class="navigation__item">
+      <a href="#phones">Телефоны</a>
+    </li>
+    <li class="navigation__item">
+      <a href="#laptops">Ноутбуки</a>
+    </li>
+  </ul>
+  <main class="main">
+    <section class="product-container" id="tvs">
+      <div class="product-container__header">
+        <h2>Телевизоры</h2>
+      </div>
+      <ul class="product-list"></ul>
+    </section>
+    <section class="product-container" id="phones">
+      <div class="product-container__header">
+        <h2>Телефоны</h2>
+      </div>
+      <ul class="product-list"></ul>
+    </section>
+    <section class="product-container" id="laptops">
+      <div class="product-container__header">
+        <h2>Ноутбуки</h2>
+      </div>
+      <ul class="product-list"></ul>
+    </section>
+    <div class="form-container">
+      <form class="form">
+        <h3 class="form__header">Покупка товара</h3>
+        <input class="form__input" type="number" placeholder="Введите количество" />
+        <fieldset class="form__fieldset">
+          <legend>Выберите цвет</legend>
+          <div>
+            <input class="radio" type="radio" name="color" id="white" value="Белый" />
+            <label for="white">Белый</label>
+          </div>
+          <div>
+            <input class="radio" type="radio" name="color" id="black" value="Чёрный" />
+            <label for="black">Чёрный</label>
+          </div>
+          <div>
+            <input class="radio" type="radio" name="color" id="blue" value="Синий" />
+            <label for="blue">Синий</label>
+          </div>
+          <div>
+            <input class="radio" type="radio" name="color" id="yellow" value="Жёлтый" />
+            <label for="yellow">Жёлтый</label>
+          </div>
+        </fieldset>
+        <div class="form__comment">
+          <label for="comment">Оставьте комментарий <span>(Не более 2000 символов)</span></label>
+          <textarea id="comment" name="comment" rows="5" maxlength="2000" placeholder="Введите свой комментарий"></textarea>
+        </div>
+        <button class="button" disabled>Купить</button>
+        <button class="button button_red">Закрыть</button>
+      </form>
+    </div>
+    <button class="button button_up hidden">Наверх</button>
+  </main>
+  <footer class="footer">
+    <nav>
+      <ul class="navigation" style="display: flex;">
+        <li class="navigation__item">
+          <a href="#tvs">Телевизоры</a>
+        </li>
+        <li class="navigation__item">
+          <a href="#phones">Телефоны</a>
+        </li>
+        <li class="navigation__item">
+          <a href="#laptops">Ноутбуки</a>
+        </li>
+      </ul>
+    </nav>
+    <button class="button button_footer">Наверх</button>
+  </footer>
+  <script src="/src/scripts/script.js" type="module"></script>
+</body>
+</html>
