@@ -58,6 +58,4 @@ const upScroll = () => {
   });
 };
 
-const cleanForm = (form) => {};
-
 export { convertDayInfo, addClass, removeClass, animateScroll, upScroll };

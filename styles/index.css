@@ -190,7 +190,7 @@ body {
   cursor: pointer;
   width: 1.5rem;
   height: 1.5rem;
-  background-image: url("/src/assets/icons/color-mode-switch.svg");
+  background-image: url("/assets/icons/color-mode-switch.svg");
 }
 
 .header__color-mode-switch:hover {
@@ -315,6 +315,7 @@ body {
 .button:hover .cart {
   display: block;
   transform: translateX(0);
+  opacity: 1;
 }
 
 .button:active {
@@ -324,6 +325,7 @@ body {
 .cart {
   display: block;
   position: absolute;
+  opacity: 0;
   right: 0.5rem;
   bottom: 0.6rem;
   z-index: 100;

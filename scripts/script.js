@@ -1,13 +1,13 @@
-import elements from "../modules/HTMLElements.js";
-import { ProductCard } from "../modules/ProductCard.js";
-import { tvsList, phonesList, laptopsList } from "../modules/ProductsInfo.js";
+import elements from "./HTMLElements.js";
+import { ProductCard } from "./ProductCard.js";
+import { tvsList, phonesList, laptopsList } from "./ProductsInfo.js";
 import {
   addClass,
   animateScroll,
   convertDayInfo,
   removeClass,
   upScroll,
-} from "../modules/helpers.js";
+} from "./helpers.js";
 
 const initProducts = (productsList, productContainer) => {
   productsList.forEach(({ imgLink, name, date }) => {
