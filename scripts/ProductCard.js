@@ -30,7 +30,7 @@ class ProductCard extends Object {
     addedAt.innerText = "Добавлен:";
     date.innerText = this.date;
     button.innerText = "Купить";
-    buttonImage.src = "/assets/icons/cart.svg";
+    buttonImage.src = "./assets/icons/cart.svg";
     buttonImage.alt = "cart-logo";
 
     productCard.appendChild(image);
